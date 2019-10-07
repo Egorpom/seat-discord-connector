@@ -285,6 +285,10 @@ class DiscordClient implements IClient
         } while (true);
     }
 
+    CONST whitelistRoleIds = [
+        "630206902185492510"
+    ];
+
     /**
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Seat\Services\Exceptions\SettingException
@@ -301,6 +305,8 @@ class DiscordClient implements IClient
 
             // ignore managed roles (ie: booster)
             if ($role_attributes['managed']) continue;
+
+            if (!in_array($role_attributes['id'], self::whitelistRoleIds)) continue;
 
             $role = new DiscordRole($role_attributes);
             $this->roles->put($role->getId(), $role);
