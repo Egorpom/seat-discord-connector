@@ -101,6 +101,7 @@ class DiscordMember implements IUser
      */
     public function setName(string $name): bool
     {
+        /*
         $nickname = Str::limit($name, 32, '');
 
         DiscordClient::getInstance()->sendCall('PATCH', '/guilds/{guild.id}/members/{user.id}', [
@@ -110,6 +111,7 @@ class DiscordMember implements IUser
         ]);
 
         $this->nick = $nickname;
+        */
 
         return true;
     }
