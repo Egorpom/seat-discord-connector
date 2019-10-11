@@ -113,7 +113,7 @@ class DiscordMember implements IUser
         $this->nick = $nickname;
         */
 
-        return true;
+        return false;
     }
 
     /**
