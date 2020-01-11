@@ -287,9 +287,11 @@ class DiscordClient implements IClient
 
     CONST whitelistRoleIds = [
         "594654571373264906", //Fleets
+        "664645562209009665", //Worst Alliance Ever
         "578296482990522368", //Zero To High.
         "631959946308616245", //Zero To High. Capitals
-        "631960389202083973", //Zero To High. Wormhole
+        "664642368430931968", //Zero 2 Hero.
+        "631960389202083973", //Zero 2 Hero. Wormhole
         "594654873220415488" //Fleet Com.
     ];
 
